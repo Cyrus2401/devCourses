@@ -1,0 +1,187 @@
+.divContainForm form button {
+  padding: 10px;
+  border: 2px solid #266366;
+  border-radius: 5px;
+  outline: none;
+  background-color: #266366;
+  transition: ease-in 0.5s;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.containList h1, .divContainForm h1 {
+  text-align: center;
+  font-weight: 250;
+  word-spacing: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--------------- index.php ---------------*/
+header {
+  background-color: #266366;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+header h1 {
+  display: flex;
+  align-items: center;
+}
+header h1 a {
+  text-decoration: none;
+  color: white;
+}
+header h1 a:hover {
+  color: white;
+}
+header h1 img {
+  width: 10%;
+}
+header h1:hover {
+  opacity: 0.8;
+}
+header h3 {
+  margin-right: 15px;
+}
+
+.bodyDashboard div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  border: 2px solid #eeebeb;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  transition: ease-out 0.7s;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+.bodyDashboard div:hover {
+  border: none;
+  transform: scale(1.05);
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.bodyDashboard img {
+  width: 50%;
+  height: 20vh;
+  margin-bottom: 10%;
+  margin-top: 7%;
+}
+.bodyDashboard a {
+  text-decoration: none;
+  color: #266366;
+  text-align: center;
+}
+.bodyDashboard a:hover {
+  color: #266366;
+}
+
+/*--------------- addCourses.php & addMatiere.php ---------------*/
+.divContainForm {
+  width: 45%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.divContainForm form {
+  margin-top: 5%;
+}
+.divContainForm form p {
+  margin-bottom: 4%;
+}
+.divContainForm form .divBtn {
+  margin: auto;
+  width: 40%;
+}
+.divContainForm form button {
+  width: 100%;
+}
+.divContainForm form input, .divContainForm form select {
+  border: 1px solid #266366;
+  margin-bottom: 5%;
+}
+.divContainForm form span {
+  margin-left: 2%;
+  font-size: 1.2em;
+  text-align: center;
+}
+.divContainForm form .alert {
+  text-align: center;
+}
+
+/*--------------- listCourses.php & listMatiere.php ---------------*/
+.containList {
+  margin-top: 2%;
+}
+.containList h1 {
+  margin-bottom: 2%;
+}
+.containList table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 80%;
+}
+.containList table td, .containList table th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.containList table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.containList table tr:hover {
+  background-color: #ddd;
+}
+.containList table th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #266366;
+  color: white;
+}
+.containList table tr {
+  text-align: center;
+}
+.containList table tr .bi-pencil-square {
+  color: blue;
+}
+.containList table tr .bi-pencil-square:hover {
+  color: blue;
+}
+.containList table tr .bi-trash-fill {
+  color: red;
+}
+.containList table tr .bi-trash-fill:hover {
+  color: red;
+}
+
+.formDelete {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #eeebeb;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  transition: ease-out 0.7s;
+  padding: 15px;
+}
+.formDelete div {
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

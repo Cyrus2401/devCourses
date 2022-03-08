@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containAll {
+  background: url("../images/imgB3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.containAll header {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  z-index: -100;
+}
+.containAll header div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 50%;
+}
+.containAll header h1 {
+  color: white;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  font-size: 3.6vw;
+  font-weight: 400;
+  font-family: "lucida sans";
+}
+.containAll header h5 {
+  text-align: center;
+  color: yellow;
+  margin-top: 1%;
+  font-size: 1.5vw;
+}
+
+section {
+  padding: 15px;
+  margin: auto;
+  width: 100%;
+}
+section div {
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 4%;
+  transition: ease-out 0.5s;
+  cursor: pointer;
+  background-color: whitesmoke;
+  transform: scale(1.05);
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+}
+section div a {
+  font-family: "lucida sans";
+  text-decoration: none;
+  color: #266366;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+section div a:hover {
+  color: #266366;
+}
+section div span {
+  margin-top: 5%;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #266366;
+  margin: auto;
+  padding: 2%;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+}
+
+.titleListCourses h1 {
+  background-color: #266366;
+  padding: 1.5%;
+  color: white;
+  text-align: center;
+  word-spacing: 3px;
+  font-weight: 300;
+}
+
+.containCoursLIST {
+  margin: auto;
+  width: 70%;
+}
+.containCoursLIST .showCourses {
+  border: 1px solid #266366;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin: 3%;
+  padding: 1.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
