@@ -12,38 +12,43 @@
     <link rel="shortcut icon" href="../images/560216.png" >
 </head>
 <body>
-    <div class="containAll">
-        <header>
+ 
+    <header>
+        <div class="containHeader">
+            <div class="divImg">
+                <img src="../images/560216.png" alt="" width="160" class="img-fluid">
+            </div>
             <div>
                 <h1>Bienvenue sur devCourses</h1>
                 <h5>Un site de téléchargement des cours de programmation</h5>
             </div>
-        </header>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <section class="row">
+            <?php
+                require('../admin/bdd/connexionBdd.php');
+
+                $requete = $connexion->query("SELECT * FROM `matieres` WHERE etat=1");
+
+                while ($resultats = $requete->fetch()) {
+                    echo '
+                        <div class="col-lg-3 col-md-4">
+                            <a href="downloadCourses.php?download='.$resultats["id_matiere"].'">
+                                <img src="../admin/imagesUpload/'.$resultats["image"].'" alt="" width="50" height="50"  >
+                                <span>'.strtoupper($resultats["nom"]).'</span>
+                            </a>
+                        </div>
+                    ';
+                }
+            ?>
+        </section>
     </div>
 
-    <section class="row">
-        <?php
-            require('../admin/bdd/connexionBdd.php');
-
-            $requete = $connexion->query("SELECT * FROM `matieres` WHERE etat=1");
-
-            $count = 0;
-
-            while ($resultats = $requete->fetch()) {
-                echo '
-                    <div class="col-xs-4 col-sm-3 col-md-2">
-                        <a href="downloadCourses.php?download='.$resultats["id_matiere"].'">
-                            <img src="../admin/imagesUpload/'.$resultats["image"].'" alt="" width="100" height="80">
-                            <span>'.strtoupper($resultats["nom"]).'</span>
-                        </a>
-                    </div>
-                ';
-            }
-        ?>
-    </section>
-
     <footer>
-        <div>&copy<?php echo date("Y"); ?> - devCourses</div>
+        &copy <?php echo date("Y"); ?> - devCourses
     </footer>
     
 </body>

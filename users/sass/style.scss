@@ -3,90 +3,84 @@
     padding: 0;
     box-sizing: border-box;
 }
-.containAll{
-    background: url('../images/imgB3.jpg');
-    background-repeat:no-repeat; 
-    background-size: cover; 
-    height: 100vh;
+
+header{
+    background-color: rgb(38, 99, 102);
+    height: 50vh;
     
+    .containHeader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-    header{
-        background-color: rgba(0, 0, 0, 0.7);
-        height: 100vh;
-        z-index: -100;
-
-        div{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin: auto;
-            width: 50%;
-        }
-        h1{
-            color: white;
-            margin: auto;
-            width: 100%;
-            text-align: center;
-            font-size: 3.6vw;
-            font-weight: 400;
-            font-family: 'lucida sans'; 
-        }
-        h5{
-            text-align: center;
-            color: yellow;
-            margin-top: 1%;
-            font-size: 1.5vw;
+        .divImg{
+            margin-bottom: 3%;
         }
     }
-}
-section{
-    padding: 15px;
-    margin: auto;
-    width: 100%;
-    
-    div{
-        border: none;
-        border-radius: 10px;
-        padding: 15px;
-        margin: 4%;
-        
-        transition: ease-out .5s;
-        cursor: pointer;
-        background-color: rgb(245, 245, 245);
 
-        transform: scale(1.05);
-        box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
-        -webkit-box-shadow:3px 2px 8px rgba(0, 0, 0, 0.3);
-        -moz-box-shadow:3px 2px 8px rgba(0, 0, 0, 0.3);
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 400;
+        font-family: sans-serif; 
+    }
+    h5{
+        text-align: center;
+        color: yellow;
+        margin-top: 1%;
+        font-size: 2vw;
+    }
+}
+
+section{
+
+    div{
+        padding: 1%;
+        transition: all .5s;
+        cursor: pointer;
         
         a{   
             font-family: 'lucida sans';
             text-decoration: none;
-            color: rgb(38, 99, 102);
+            color: black;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            align-content: center;
+            padding: 20px;
+            transition: 0.3s;
+            border: 1px solid #dddd;
             
             &:hover{
+                border-color: rgb(38, 99, 102);
                 color: rgb(38, 99, 102);
             }
-        }
-        span{
-            margin-top: 5%;
-            font-weight: 500;
+            img{
+                font-size: 32px;
+                padding-right: 10px;
+                line-height: 1;
+            }
+            span{
+                margin: 0;
+                padding: 0;
+                line-height: 1;
+                font-size: 16px;
+            }
         }
     }
 }
 footer{
     background-color: rgb(38, 99, 102);
-    margin: auto;
-    padding: 2%;
+    padding: 1%;
     text-align: center;
     color:white;
-    font-size:1.5em;
+    font-size:1.2em;
 }
+
 .titleListCourses{
     h1{
         background-color: rgb(38, 99, 102);
@@ -98,16 +92,15 @@ footer{
     }
 }
 .containCoursLIST{
-    margin: auto;
-    width: 70%;
+    
 
     .showCourses{
-        border: 1px solid rgb(38, 99, 102);
-        background-color: rgb(245, 245, 245);
+        border: 1px solid rgb(38, 99, 102);;
         border-radius: 10px;
         margin: 3%;
-        padding: 1.5%;
+        padding: 15px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 }

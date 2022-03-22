@@ -29,7 +29,7 @@
         <h1>Listes des cours <?php echo strtoupper(@$matiere["nom"]); ?></h1>
     </div>
 
-    <div class="containCoursLIST">
+    <div class="containCoursLIST container-fluid">
 
         <?php
             require('../admin/bdd/connexionBdd.php');

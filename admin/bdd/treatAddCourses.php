@@ -51,6 +51,7 @@
                 $verifyRequete2 = $requete2->rowCount();
 
                 if($verifyRequete1 != 0) {
+                
                     $error = "Ce cours a été déjà enregisté !";
                 }
                 elseif($verifyRequete1 == 0 && $verifyRequete2 != 1){
